@@ -1,0 +1,19 @@
+
+import { SideBar } from "side_bar.60";
+import { IconText } from "deps/jmui/icon_text.60";
+
+export AppWindow := Window {
+	preferred-height: 300px;
+
+	HorizontalLayout {
+		x: 10px;
+		y: x;
+		SideBar {
+			width: 200px;
+		}
+		Rectangle { 
+			
+		}
+	}
+
+}

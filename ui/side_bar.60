@@ -1,0 +1,155 @@
+import { IconText } from "deps/jmui/icon_text.60";
+import { ScrollView } from "sixtyfps_widgets.60";	
+
+
+SideBar := VerticalLayout {
+	spacing: 10px;
+	property <brush> icon-color;
+	icon-color: #CCCCCC;
+
+	IconText {
+		icon: @image-url("deps/jmui/icons/user.png");
+		input: "Demo Account";
+		font-weight: 500;
+		font-family: "SF Pro";
+		element-color: root.icon-color;
+		scale: 60%;
+	}
+	ScrollView {
+		height: root.height - 35px;
+
+		VerticalLayout {
+			spacing: 5px;
+
+			property <[{icon: image, input: string}]> main-items: [
+				{ 
+					icon: @image-url("deps/jmui/icons/100/play.png"),
+					input: "All Bookmarks",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/delete.png"),
+					input: "Trash",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/100/play.png"),
+					input: "All Bookmarks",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/delete.png"),
+					input: "Trash",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/100/play.png"),
+					input: "All Bookmarks",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/delete.png"),
+					input: "Trash",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/100/play.png"),
+					input: "All Bookmarks",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/delete.png"),
+					input: "Trash",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/100/play.png"),
+					input: "All Bookmarks",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/delete.png"),
+					input: "Trash",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/100/play.png"),
+					input: "All Bookmarks",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/delete.png"),
+					input: "Trash",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/100/play.png"),
+					input: "All Bookmarks",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/delete.png"),
+					input: "Trash",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/100/play.png"),
+					input: "All Bookmarks",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/delete.png"),
+					input: "Trash",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/100/play.png"),
+					input: "All Bookmarks",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/delete.png"),
+					input: "Trash",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/100/play.png"),
+					input: "All Bookmarks",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/delete.png"),
+					input: "Trash",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/100/play.png"),
+					input: "All Bookmarks",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/delete.png"),
+					input: "Trash",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/100/play.png"),
+					input: "All Bookmarks",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/delete.png"),
+					input: "Trash",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/100/play.png"),
+					input: "All Bookmarks",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/delete.png"),
+					input: "Trash",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/100/play.png"),
+					input: "All Bookmarks",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/delete.png"),
+					input: "Trash",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/100/play.png"),
+					input: "All Bookmarks",
+				},
+				{ 
+					icon: @image-url("deps/jmui/icons/delete.png"),
+					input: "Trash",
+				},
+			];
+			
+			for item in main-items : IconText { 
+				icon: item.icon;
+				input: item.input;
+				element-color: root.icon-color;
+				scale: 60%;
+			}
+		}
+	}
+}

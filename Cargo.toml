@@ -1,0 +1,15 @@
+[package]
+name = "ubmark"
+version = "0.1.0"
+authors = ["Jared Moulton <jaredmoulton3@gmail.com>"]
+edition = "2018"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sixtyfps = { path = "/Users/jaredmoulton/Programming/sixtyfps/bug/scroll-border/api/sixtyfps-rs/" }
+
+[build-dependencies]
+sixtyfps-build = { path = "/Users/jaredmoulton/Programming/sixtyfps/bug/scroll-border/api/sixtyfps-rs/sixtyfps-build/" }
+

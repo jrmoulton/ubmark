@@ -1,0 +1,8 @@
+[package]
+name = "ubmarkui"
+version = "0.1.0"
+authors = ["Jared Moulton <jaredmoulton3@gmail.com>"]
+
+[dependencies]
+jmui = { git = "https://github.com/jrmoulton/jmui"}
+
